@@ -7,5 +7,5 @@ doc = Nokogiri::HTML(open('https://www.uta-net.com/artist/17598/'))
 
 puts "### Search for nodes by css"
 doc.xpath('//td[@class="side td1"]').each do |node|
-  p node.css('a').text
+  puts node.css('a').text
 end
